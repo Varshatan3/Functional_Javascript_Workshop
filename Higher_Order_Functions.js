@@ -1,10 +1,13 @@
 //test case 1 for recurr()
 //console.log("Test recurr",recurr())
 //test case 2
-console.log("The function is executed ",repeat(recurr,3)===true)
-console.log("# of times executed - ",i)
+//console.log("The function is executed ",repeat(recurr,3)===true)
+//console.log("# of times executed - ",i)
+//test case 3
+console.log("The function is not executed ",repeat(recurr,-3)===0)
+console.log("# of times executed - ",repeat(recurr,-3))
 
-var value=0;
+let value=0;
 function recurr()
 {	
 	value++;
@@ -16,10 +19,10 @@ function repeat(recurr,num)
 	{
 		recurr();
 	}
-if (i===num){
-	return true;
+	if (i===num){
+		return true;
+		}
+	else{
+		return 0;
+		}
 	}
-else{
-	return null;
-	}
-}
