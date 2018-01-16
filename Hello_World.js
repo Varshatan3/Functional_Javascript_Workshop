@@ -1,18 +1,19 @@
 //test case 1
-console.log("Return Upper Case (Failure)",Upper(12)===null)
+//console.log("Return Upper Case (Failure)",upper(12)===null)
 //test case 2
-console.log("Return Upper Case (Pass)",Upper('hi there')===true)
+console.log("Return Upper Case",upper('varsha')==='VARSHA')
 //test case 3
-console.log("Return Upper Case (Blank string)",Upper('')===true)
+//console.log("Return Upper Case (Blank string)",upper('')===true)
 //test case 4
-console.log("Return Upper Case (array)",Upper([1,2,3,4])===null)
-function Upper(Input_string)
+//console.log("Return Upper Case (array)",upper([1,2,3,4])===null)
+function upper(Input_string)
 {
 	if(typeof(Input_string)=== 'string')
 	{
-		Input_string.toUpperCase();
+		let result = Input_string.toUpperCase();
+		console.log(result);
+		return(result);
 		
-		return true
 		
 	}
 	else{
